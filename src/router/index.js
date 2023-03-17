@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Listar from '../components/ListarUsuario.vue'
+import Crear from '../components/CrearUsuario.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -29,9 +31,14 @@ const router = createRouter({
       component: ()=>import('../components/Delete.vue')
     },
     {
-      path:'/homeview',
-      name:'homeview',
-      component: ()=>import('../views/Homeview.vue')
+      path:'/listar',
+      name:'listar',
+      component: Listar
+    },
+    {
+      path: '/crear',
+      name: 'crear',
+      component: Crear
     }
   ]
 })

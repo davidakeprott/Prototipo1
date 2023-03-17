@@ -12,7 +12,9 @@ import { RouterLink, RouterView } from 'vue-router'
             <router-link to="/">
               <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
             </router-link>
-                     
+            <br />
+            <router-link to="/crear">Crear</router-link>
+            <router-link to="/listar">Listar</router-link>
           </div>
           <div class="row">
             <div class="login">
@@ -22,38 +24,33 @@ import { RouterLink, RouterView } from 'vue-router'
                 <input class="form-input" type="email" id="email" required placeholder="Email" />
                 <label class="form-label" for="#password">Contraseña:</label>
                 <input class="form-input" type="password" id="password" placeholder="Password" />
-                <!-- <p v-if="error" class="error">Has introducido mal el email o la contraseña.</p> -->
+                <p v-if="error" class="error">Has introducido mal el email o la contraseña.</p>
                 <input class="form-submit" type="submit" value="login" />
               </form>
             </div>
           </div>
           <div class="row">
-            <div class="col-all">
-              
-            </div>
-
+            <div class="col-all"></div>
           </div>
         </div>
       </div>
-      <div class="col">
-      </div>
+      <div class="col"></div>
     </div>
   </div>
   <router-view></router-view>
 </template>
 
-
 <script>
 export default {
   data: () => ({
-    email: "",
-    password: ""
+    email: '',
+    password: ''
   }),
   methods: {
     login() {
-      console.log(this.email);
-      console.log(this.password);
-      this.$router.push("/dashboard")
+      console.log(this.email)
+      console.log(this.password)
+      this.$router.push('/dashboard')
     }
   }
 }
@@ -117,4 +114,5 @@ export default {
   &:hover {
     background: #0b9185;
   }
-}</style>
+}
+</style>

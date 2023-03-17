@@ -1,4 +1,3 @@
-
 <template>
   <div >
     <div>
@@ -13,7 +12,7 @@
         <div id="menu" class="col-2">
           <div class="container">
             <div class="row">
-              <h4>Opsiones</h4>
+              <h4>Opciones</h4>
             </div>
             <div class="row">
               <router-link :to="{name:'Get'}" type="button" class="btn btn-outline-secondary">Get</router-link>
