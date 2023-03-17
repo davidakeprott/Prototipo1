@@ -29,7 +29,7 @@ import { RouterLink, RouterView } from 'vue-router'
           </div>
           <div class="row">
             <div class="col-all">
-              <router-view></router-view>
+              
             </div>
 
           </div>
@@ -39,6 +39,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
   </div>
+  <router-view></router-view>
 </template>
 
 
